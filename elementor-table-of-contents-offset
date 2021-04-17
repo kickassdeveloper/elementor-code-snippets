@@ -1,0 +1,5 @@
+//Add offset to Table of Contents Elementor element 
+.elementor-menu-anchor {
+  top: -125px; //Change bases on the value you need, offset
+  position: relative;
+}
