@@ -1,0 +1,29 @@
+//Add drmb-table to css class of the Table of Contents Elementor element 
+//This code makes the table of content become linear so titles come one after a nother 
+.drmb-table  .elementor-toc__header{
+    display:none;
+}
+.drmb-table .elementor-widget-container{
+    border:none!important;    
+}
+.drmb-table .elementor-toc__list-item{
+    display:inline-block;
+    font-size: 14px!important;
+    padding-right:10px;
+    color:#000000;   
+    font-weight:600!important;
+}
+.drmb-table .elementor-toc__list-item:not(:first-child){
+    
+}
+.drmb-table .elementor-toc__list-item:not(:first-child):before{
+    content:"|"; // Title separator, add your own if you want to
+   display:inline-block;
+   float:left;
+   padding-right:10px;    
+}
+@media (max-width:768px){
+    .drmb-table .elementor-toc__list-item:not(:first-child):before{
+    content:"";
+    }
+}
